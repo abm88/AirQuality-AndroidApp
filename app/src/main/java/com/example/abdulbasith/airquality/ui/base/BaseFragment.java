@@ -26,9 +26,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.abdulbasith.apidemo.R;
-import com.example.abdulbasith.apidemo.utils.utils.CommonUtils;
-import com.example.abdulbasith.apidemo.utils.utils.NetworkUtils;
+import com.example.abdulbasith.airquality.R;
+import com.example.abdulbasith.airquality.ui.base.utility.rx.CommonUtils;
+import com.example.abdulbasith.airquality.ui.base.utility.rx.NetworkUtils;
 
 
 /**
@@ -58,7 +58,7 @@ public abstract class BaseFragment extends Fragment implements MvpView {
         if (message != null) {
             showSnackBar(message);
         } else {
-            showSnackBar(getString(R.string.some_error));
+          //  showSnackBar(getString(R.string.some_error));
         }
     }
 
@@ -76,7 +76,7 @@ public abstract class BaseFragment extends Fragment implements MvpView {
         if (message != null) {
             Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(getActivity(), getString(R.string.some_error), Toast.LENGTH_SHORT).show();
+           // Toast.makeText(getActivity(), getString(R.string.some_error), Toast.LENGTH_SHORT).show();
         }
     }
 

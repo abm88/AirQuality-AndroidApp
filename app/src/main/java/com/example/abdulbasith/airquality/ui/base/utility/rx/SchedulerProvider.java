@@ -1,17 +1,15 @@
-package com.example.abdulbasith.airquality.utils.rx;
+package com.example.abdulbasith.airquality.ui.base.utility.rx;
 
 import io.reactivex.Scheduler;
 
 /**
- * Created by hrskrs on 5/8/2017.
+ * Created by AbdulBasit on 18/10/2017.
  */
 
 public interface SchedulerProvider {
-
     Scheduler ui();
-
     Scheduler computation();
-
     Scheduler io();
+
 
 }

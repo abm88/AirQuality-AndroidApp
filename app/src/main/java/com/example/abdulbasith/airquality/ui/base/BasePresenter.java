@@ -19,8 +19,8 @@ package com.example.abdulbasith.airquality.ui.base;
  * Created by AbdulBasit on 17/10/2017.
  */
 
-import com.example.abdulbasith.apidemo.data.DataManager;
-import com.example.abdulbasith.apidemo.utils.utils.rx.SchedulerProvider;
+import com.example.abdulbasith.airquality.data.AppDataManager;
+import com.example.abdulbasith.airquality.ui.base.utility.rx.SchedulerProvider;
 
 import io.reactivex.disposables.CompositeDisposable;
 
@@ -33,14 +33,14 @@ public class BasePresenter<V extends MvpView> implements MvpPresenter<V> {
 
     private static final String TAG = "BasePresenter";
 
-    private final DataManager mDataManager;
+    private final AppDataManager mDataManager;
     private final SchedulerProvider mSchedulerProvider;
     private final CompositeDisposable mCompositeDisposable;
 
     private V mMvpView;
 
 
-    public BasePresenter(DataManager dataManager,
+    public BasePresenter(AppDataManager dataManager,
                          SchedulerProvider schedulerProvider,
                          CompositeDisposable compositeDisposable) {
         this.mDataManager = dataManager;
@@ -71,7 +71,7 @@ public class BasePresenter<V extends MvpView> implements MvpPresenter<V> {
         if (!isViewAttached()) throw new MvpViewNotAttachedException();
     }
 
-    public DataManager getDataManager() {
+    public AppDataManager getDataManager() {
         return mDataManager;
     }
 
