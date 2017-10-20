@@ -1,7 +1,8 @@
 package com.example.abdulbasith.airquality;
 
-import com.example.abdulbasith.airquality.data.network.adapter.API_Constants;
-import com.example.abdulbasith.airquality.data.network.adapter.service.Offline_CacheData;
+import com.example.abdulbasith.airquality.data.network.API_Constants;
+import com.example.abdulbasith.airquality.data.network.service.IRequestInterface;
+import com.example.abdulbasith.airquality.data.network.service.Offline_CacheData;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import java.io.File;
